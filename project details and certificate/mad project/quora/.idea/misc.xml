@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mad2/quora/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/drawable/ic_dislike.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/drawable/ic_disliked.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/drawable/ic_thumb_up.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_ask_question.xml" value="0.14666666666666667" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_category_selected.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_comment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_finace.xml" value="0.14356884057971014" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_login3.xml" value="0.17552083333333332" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/activity_registration.xml" value="0.22" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/comment_layout.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/nav_header.xml" value="0.16666666666666666" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/layout/questions_retrieved_layout.xml" value="0.22" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/menu/drawable_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/menu/drawer_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/menu/post_menu.xml" value="0.1" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/menu/postmenu.xml" value="0.14666666666666667" />
+        <entry key="..\:/Mad2/quora/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_comment.xml" value="0.1815" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_dislike.xml" value="0.1815" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_finace.xml" value="0.1035" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_foods.xml" value="0.2265" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_homing.xml" value="0.1035" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_image.xml" value="0.1945" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_more.xml" value="0.1815" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_rate.xml" value="0.1945" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_save.xml" value="0.1815" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_share.xml" value="0.1945" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_sports.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/drawable/ic_thumb_up.xml" value="0.1815" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_ask_question.xml" value="0.152" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_finace.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_home2.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_login2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_login3.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/activity_registration.xml" value="0.176" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/home.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/nav_header.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/layout/questions_retrieved_layout.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/menu/drawable_menu.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/menu/drawer_menu.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/quora/app/src/main/res/menu/postmenu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

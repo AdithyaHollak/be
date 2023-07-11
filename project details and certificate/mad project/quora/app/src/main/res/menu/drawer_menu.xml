@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myquestions"
+            android:title="My Questions"
+            android:icon="@drawable/ic_homing"/>
+        <item
+            android:id="@+id/nav_finace"
+            android:title="Finance"
+            android:icon="@drawable/ic_finace"/>
+        <item
+            android:id="@+id/nav_sports"
+            android:title="Sports"
+            android:icon="@drawable/ic_sports"/>
+        <item
+            android:id="@+id/nav_food"
+            android:title="Food"
+            android:icon="@drawable/ic_foods"/>
+
+    </group>
+    <item android:title="Action">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:title="Share"
+                android:icon="@drawable/ic_share"/>
+
+
+            <item
+                android:id="@+id/rate"
+                android:title="Rate"
+               android:icon="@drawable/ic_rate"/>
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"/>
+
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

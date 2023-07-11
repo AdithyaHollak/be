@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome To My To Do List</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="personal.css"> 
+  <style>
+ .progression
+{
+	width: 1000px;
+	text-align: center;
+	padding-left:600px;
+}
+
+p.progress-text
+{
+	font-weight: bold;
+}
+
+.progress-container
+{
+	display: block;
+	background-color: red;
+	height: 50px;
+
+}
+.progress-bar
+{
+	background-color:rgb(89, 255, 47);
+	height: 100%;
+	width: 50%;
+	transition: width 0.5s;
+
+}
+.button
+{
+	padding-left: 780px;
+	width:300px;
+	height:100px;
+	margin-top:55px;
+}
+  </style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="addTask">
+			<input type="text" placeholder="Add a Task">
+			<button>Add</button>
+		</div>
+
+		<ol class="notCompleted">
+			<h3>Task Yet To Be done!!!!!</h3>
+		</ol>
+
+		<ol class="Completed">
+			<h3>Task Successfully Completed!!!!</h3>
+		</ol>
+
+		<ol class="progressbar">
+			<h3> progress </h3>
+		</ol>
+	</div>
+	<div class="progression">
+		<p class="progress-text">You have completed 0 of 30 task.</p>
+		<div class="progress-container">
+			<div class="progress-bar"></div>
+		</div>
+		<p class="progress-percentage">0%</p>
+		<button id="btnDecrease">-</button>
+		<button id="btnIncrease">+</button>
+	</div>
+	<div class="button">
+	<a href="main.php"><input type="button" value="Logout" placeholder="logout"  required> </a>
+	</div>
+
+	<script>
+		const input = document.querySelector('input');
+		const btn = document.querySelector('.addTask > button');
+
+		btn.addEventListener('click', addList);
+		input.addEventListener('keyup', (e)=>{
+			(e.keyCode === 13 ? addList(e) : null);
+		})
+
+		function addList(e){
+			const notCompleted = document.querySelector('.notCompleted');
+			const Completed = document.querySelector('.Completed');
+
+			const newLi = document.createElement('li');
+			const checkBtn = document.createElement('button');
+			const delBtn = document.createElement('button');
+
+			checkBtn.innerHTML = '<i class="fa fa-check"></i>';
+			delBtn.innerHTML = '<i class="fa fa-trash"></i>';
+
+
+			if(input.value !==''){
+				newLi.textContent = input.value;
+				input.value = '';
+				notCompleted.appendChild(newLi);
+				newLi.appendChild(checkBtn);
+				newLi.appendChild(delBtn);
+			}
+
+			checkBtn.addEventListener('click', function(){
+				const parent = this.parentNode;
+				parent.remove();
+				Completed.appendChild(parent);
+				checkBtn.style.display = 'none';
+			});
+
+			delBtn.addEventListener('click', function(){
+				const parent = this.parentNode;
+				parent.remove();
+			});
+		}
+		var current = 0;
+const min = 0;
+const max = 50;
+
+function storageAvailable(type) {
+    var storage;
+    try {
+        storage = window[type];
+        var x = '__storage_test__';
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    }
+    catch(e) {
+        return e instanceof DOMException && (
+            e.code === 22 ||
+            e.code === 1014 ||
+            e.name === 'QuotaExceededError' ||
+            e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+            (storage && storage.length !== 0);
+    }
+}
+function updateProgress()
+{
+	document.querySelector(".progress-text").innerText = `You have completed  ${current} out of ${max} task.`; 
+	document.querySelector(".progress-bar").style.width = Math.round((current / max) * 100) + "%"; 
+	document.querySelector(".progress-percentage").innerText = Math.round((current / max) * 100) + "%"; 
+}
+function onButtonIncreaseClicked(e)
+{
+	e.preventDefault(); 
+
+
+	if (current < max)
+		current++;
+	if (storageAvailable('localStorage'))
+	{
+		localStorage.setItem("progress", current);
+	}
+
+	updateProgress(); 
+}
+
+function onButtonDecreaseClicked(e)
+{
+	e.preventDefault();
+
+	if (current > min)
+		current--;
+
+	if (storageAvailable('localStorage'))
+	{
+		localStorage.setItem("progress", current);
+	}
+
+	updateProgress(); 
+}
+
+function registerHandlers()
+{
+	document.querySelector("#btnIncrease").addEventListener("click", onButtonIncreaseClicked);
+	document.querySelector("#btnDecrease").addEventListener("click", onButtonDecreaseClicked);
+}
+
+function unregisterHandlers()
+{
+	document.querySelector("#btnIncrease").removeEventListener("click", onButtonIncreaseClicked);
+	document.querySelector("#btnDecrease").removeEventListener("click", onButtonDecreaseClicked);
+}
+function setup()
+{
+	if (storageAvailable('localStorage') && localStorage.getItem("progress") != null && !isNaN(localStorage.getItem("progress")))
+	{
+		current = parseInt(localStorage.getItem("progress"));
+
+		if (current > max) 
+			current = max;
+		else if (current < min) 
+			current = min;
+	}
+	registerHandlers(); 
+	updateProgress(); 
+}
+setup(); 
+
+</script>
+</body>
+</html>

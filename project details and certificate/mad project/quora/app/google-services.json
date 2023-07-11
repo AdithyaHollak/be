@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "844710630276",
+    "project_id": "quora-d42a9",
+    "storage_bucket": "quora-d42a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844710630276:android:039ea9628fc06a645643d1",
+        "android_client_info": {
+          "package_name": "com.example.quora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844710630276-lmi9ppudk1iv3m8m3kci3v5873u8ke13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quora",
+            "certificate_hash": "6d8cdfab8da8511b5d4c1ab0221050a1148786b1"
+          }
+        },
+        {
+          "client_id": "844710630276-3ru8174oq94u2lnnkithcr9r288n6i6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeOrFqZ8HegjHl5CZXkJvf1VJZdodaqGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844710630276-3ru8174oq94u2lnnkithcr9r288n6i6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
